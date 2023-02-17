@@ -1,24 +1,18 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 /**
  * main - main block
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-char c = 'a';
+char c = 'z';
 
-while (c <= 'z')
+while (c >= 'a')
 {
-putchar(c);
-c++;
-}
-
-c = 'A';
-
-while (c <= 'Z')
-{
-putchar(c);
-c++;
+putchar(48 + c);
+c--;
 }
 
 putchar('\n');
